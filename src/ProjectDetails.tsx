@@ -1,14 +1,14 @@
 import aipLogo from "/aip-icon.svg";
 import { useCallback, useEffect, useRef, useState } from "react";
 import CreateTaskButton from "./CreateTaskButton";
-import type { MockProject } from "./mocks";
+import type { IProject } from "./types";
 import css from "./ProjectDetails.module.css";
 import TaskList from "./TaskList";
 import useProjects from "./useProjects";
 import { useProjectTasks } from "./useProjectTasks";
 
 interface ProjectDetailsProps {
-  project: MockProject;
+  project: IProject;
 }
 
 export function ProjectDetails({ project }: ProjectDetailsProps) {

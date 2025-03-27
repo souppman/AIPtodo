@@ -3,11 +3,11 @@ import type { ChangeEvent } from "react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import css from "./CreateTaskDialog.module.css";
 import Dialog from "./Dialog";
-import type { MockProject } from "./mocks";
+import type { IProject } from "./types";
 import { useProjectTasks } from "./useProjectTasks";
 
 interface CreateTaskDialogProps {
-  project: MockProject;
+  project: IProject;
   isOpen: boolean;
   onClose: () => void;
   onTaskCreated: (taskId: string) => void;

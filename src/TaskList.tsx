@@ -1,10 +1,10 @@
-import type { MockProject } from "./mocks";
+import type { IProject } from "./types";
 import css from "./TaskList.module.css";
 import TaskListItem from "./TaskListItem";
 import { useProjectTasks } from "./useProjectTasks";
 
 interface TaskListProps {
-  project: MockProject;
+  project: IProject;
   onTaskDeleted: (taskId: string | undefined) => void;
 }
 
