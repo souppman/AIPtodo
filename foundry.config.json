@@ -1,0 +1,11 @@
+{
+  "foundryUrl": "https://optifleet.usw-3.palantirfoundry.com",
+  "site": {
+    "application": "ri.third-party-applications.main.application.e37c5dc6-fcd1-4577-b8db-e5dfc7143973",
+    "directory": "./dist",
+    "autoVersion": {
+      "type": "git-describe",
+      "tagPrefix": ""
+    }
+  }
+}
